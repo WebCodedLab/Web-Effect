@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Effect</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <style>
+        .detailscontainer {
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main w-full h-screen bg-black font-[Poppins] text-white overflow-hidden">
+        <div class="imagecontainer relative">
+            <div class="maincard absolute z-[3] w-[130%] h-[130%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <img class="w-full h-screen object-cover" src="" />
+            </div>
+            <div class="incomingcard absolute z-[2] w-[130%] h-[130%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <img class="w-full h-screen object-cover" src="" />
+            </div>
+        </div>
+
+        <div class="absolute top-0 right-0 z-[4] w-full h-screen flex justify-between flex-col">
+            <div class="navbar flex justify-between items-center px-5 py-6">
+                <div class="prflimg w-[3rem] h-[3rem] overflow-hidden rounded-full">
+                    <img class="w-full h-full object-cover" />
+                </div>
+                <h1 class="font-xl font-semibold tracking-tighter">They liked you.</h1>
+                <div
+                    class="chaticon relative flex justify-center items-center w-[3rem] rounded-full h-[3rem] bg-white/40">
+                    <i class="ri-chat-3-fill"></i>
+                    <div class="badge bg-[#C03F39] w-[1rem] h-[1rem] rounded-full flex justify-center items-center absolute top-0 -right-[3px] text-xs">
+                        <h5>0</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="detailscontainer w-full">
+                <div class="details px-5 py-6 w-full">
+                    <div class="element location flex gap-2 items-center">
+                        <i
+                            class="bg-white text-black flex justify-center items-center rounded-full w-[2rem] h-[2rem] ri-map-pin-line"></i>
+                        <h5></h5>
+                    </div>
+                    <div class="element name flex gap-2 items-center text-[3rem] font-semibold">
+                        <h1 class=""></h1>
+                        <h1 class="age text-white/50"></h1>
+                    </div>
+                    <div class="element tags flex gap-2">
+                    
+                    </div>
+                    <div class="element bio">
+                        <h1 class="text-xl font-semibold mt-2">Bio</h1>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+                        odio iste, corrupti temporibus tenetur alias.
+                    </div>
+                    <div class="element btns flex gap-2 mt-1 py-3">
+                        <button class="bg-white w-1/2 font-semibold py-2 rounded-xl">
+                            <i class="text-black text-2xl ri-close-fill"></i>
+                        </button>
+                        <button class="bg-[#C03F39] w-1/2 font-semibold py-2 rounded-xl">
+                            <i class="ri-hearts-fill text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
